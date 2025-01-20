@@ -1,4 +1,4 @@
-package model;
+package ru.demin.security.model;
 
 public enum Role {
     ROLE_ADMIN,

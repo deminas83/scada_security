@@ -1,0 +1,35 @@
+body {
+    background-color: #f2f2f2; /* светло-серый */
+    color: #333333; /* темно-серый для текста */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin: 50px auto;
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #aaaaaa; /* светлый серый */
+    border-radius: 5px;
+    background-color: #e0e0e0; /* очень светло-серый */
+}
+
+h2 {
+    text-align: center;
+}
+
+label, input, button {
+    display: block;
+    margin: 10px 0;
+}
+
+input, button {
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #cccccc; /* светло-серый */
+    color: #333333; /* темно-серый для текста */
+    cursor: pointer;
+}

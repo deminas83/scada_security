@@ -1,12 +1,12 @@
-package security;
+package ru.demin.security.security;
 
-import model.Person;
-import org.springframework.beans.factory.annotation.Autowired;
+import ru.demin.security.model.Person;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 import java.util.List;
+
 
 public class PersonDetails implements UserDetails {
 

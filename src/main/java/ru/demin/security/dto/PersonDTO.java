@@ -1,23 +1,13 @@
-package model;
+package ru.demin.security.dto;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
-import lombok.Data;
+import org.springframework.stereotype.Component;
 
-import java.util.Date;
-
-@Entity
-@Table(name = "person")
-@Data
-public class Person {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private int id;
-
+@Component
+public class PersonDTO {
     @Column(name = "username")
     @NotEmpty
     @Size(min = 2, max = 100, message = "Имя должно быть от 2 до 100 символов!")
@@ -32,14 +22,4 @@ public class Person {
     @NotEmpty
     @Email
     String email;
-
-    @Column(name = "roles")
-    @NotEmpty
-    private Role role;
-
-    private Date date_registration;
-
-    private Date last_login_time;
-
-
 }

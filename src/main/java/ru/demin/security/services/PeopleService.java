@@ -1,8 +1,8 @@
-package services;
+package ru.demin.security.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repo.PeopleRepo;
+import ru.demin.security.repo.PeopleRepo;
 
 @Service
 public class PeopleService {
